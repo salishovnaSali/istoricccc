@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Section Styles */
+.section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+    background-image: linear-gradient(145deg, #f3f4f6, #e1e4e8); /* Subtle gradient background */
+    border: 1px solid #e1e4e8; /* Subtle border around the section */
+}
+
+/* Hover Effects for Sections */
+.section:hover {
+    transform: scale(1.02); /* Slightly enlarge section on hover */
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 0.2); /* Enhance shadow effect */
+    background-image: linear-gradient(145deg, #f3f4f6, #d1d4d8); /* Darken background on hover */
+}
+
+/* Text and Title Styles */
+.text h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Section Background Styling */
+.p {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    animation: fadeInUp 1.5s ease-in-out; /* Section fade-in */
+}
+
+/* Push Section Styles */
+.push {
+    background-color: #f4f7fa;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2s ease-in-out; /* Section fade-in */
+}
+
+.push:hover {
+    background-color: #e9edf2; /* Change background color on hover */
+}
+
+/* Additional Section Styles */
+.pppp {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Mini Hover Effect for Paragraphs */
+.p p, .pppp p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 15px;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.p p:hover, .pppp p:hover {
+    color: #f39c12; /* Change text color on hover */
+}
+
+/* Image Styling (consistent size and round shape) */
+.p img, .push img, .pppp img, .mmm img {
+    max-width: 180px;
+    height: 180px;
+    display: block;
+    margin: 20px 0;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for images */
+.p img:hover, .push img:hover, .pppp img:hover, .mmm img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effect for Text */
+.text h1:hover {
+    color: #f39c12; /* Change color of title on hover */
+    transform: scale(1.05); /* Slightly enlarge title */
+}
+
+/* General Container Styling */
+.container {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .text h1 {
+        font-size: 1.8rem;
+    }
+
+    .p h3, .pppp h3 {
+        font-size: 1.5rem;
+    }
+
+    .p p, .pppp p {
+        font-size: 1rem;
+    }
+
+    .push {
+        margin-top: 20px;
+    }
+
+    .mmm h3 {
+        font-size: 1.4rem;
+    }
+
+    .p img, .push img, .pppp img, .mmm img {
+        max-width: 150px;
+        height: 150px;
+    }
+}
